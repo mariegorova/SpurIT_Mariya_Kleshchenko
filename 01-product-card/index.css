@@ -1,0 +1,182 @@
+.products {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.main_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 380px;
+  height: 470px;
+  left: 370px;
+  top: 152px;
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  background: #ffffff;
+  margin: 20px;
+}
+
+.picture {
+  background: url(/01-product-card/orange.jpg);
+  height: 213.75px;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+.picture1 {
+  position: relative;
+  height: 213.75px;
+  width: 100%;
+}
+
+img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tag_of_div {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+}
+
+.tag1 {
+  width: 111px;
+  font-family: "Arial";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 15px;
+  align-items: center;
+  text-align: center;
+  color: #2f2f2f;
+  background: #fdcff3;
+  border-radius: 8px;
+}
+
+.tag2 {
+  width: 134.41px;
+  background: #ffcf56;
+  border-radius: 8px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  margin-left: 10px;
+}
+
+.name_products {
+  height: 36px;
+  left: 24px;
+  right: 24px;
+  top: 237.75px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2f2f2f;
+}
+
+.another_div {
+  width: 80%;
+  margin: auto;
+}
+
+.text {
+  max-height: 48px;
+  left: 24px;
+  right: 24px;
+  top: 289.75px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f2f2f;
+}
+
+.button {
+  width: 80%;
+  height: 48px;
+  left: 24px;
+  border: 2px solid #42940f;
+  border-radius: 8px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #42940f;
+  text-transform: uppercase;
+  margin: 50px 20px 0;
+}
+
+.disabled_button {
+  width: 80%;
+  height: 48px;
+  left: 24px;
+  border: 1px solid #4e4e4e;
+  border-radius: 8px;
+  margin: auto;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 50px 20px 0;
+  background: #4e4e4e;
+  cursor: text;
+}
+
+.button:hover {
+  color: #ffffff;
+  background: #42940f;
+  border: 2px solid #42940f;
+  cursor: pointer;
+}
+
+.button:active {
+  background: #1f5200;
+  color: #ffffff;
+  border: 2px solid #1f5200;
+}
+
+@media screen and (max-width: 1145px) {
+  div[class="main_block"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  div[class="card"] {
+    width: 280px;
+  }
+  p[class="name_products"] {
+    font-size: 20px;
+  }
+
+  p[class="text"] {
+    line-height: 18px;
+  }
+}
